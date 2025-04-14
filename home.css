@@ -1,0 +1,318 @@
+/* Overall page styling */
+/* Header styles */
+header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #e0e0d1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* EcoCycle Logo / Title */
+header h2 {
+  font-size: 1.8rem;
+  color: #5a4d41;
+  margin: 0;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Navigation links */
+nav a {
+  text-decoration: none;
+  color: #5a4d41;
+  padding: 8px 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: #ff7f50;
+  color: white;
+}
+
+/* Active-like visual (optional) */
+nav a.active {
+  background-color: #f8b878;
+  color: white;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #f5f5dc, #f8efd4); /* soft beige gradient */
+  color: #3e3e3e;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered hero content */
+.home-hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+/* Main headline */
+.home-hero h1 {
+  font-size: 3rem;
+  color: #4a3e32;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+/* Supporting paragraph */
+.home-hero p {
+  font-size: 1.25rem;
+  color: #6e5f4d;
+  margin-bottom: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Styled button */
+.home-hero .btn {
+  background-color: #f8b878; /* muted coral beige */
+  color: white;
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.home-hero .btn:hover {
+  background-color: #ff7f50; /* coral */
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+/* Responsive styling for small devices */
+@media (max-width: 600px) {
+  .home-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-hero p {
+    font-size: 1.05rem;
+    padding: 0 1rem;
+  }
+
+  .home-hero .btn {
+    width: 90%;
+    max-width: 320px;
+    font-size: 1rem;
+    padding: 14px;
+  }
+}
+/* Responsive styling for medium devices */
+@media (min-width: 601px) and (max-width: 900px) {
+  .home-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-hero p {
+    font-size: 1.15rem;
+    padding: 0 2rem;
+  }
+
+  .home-hero .btn {
+    width: 80%;
+    max-width: 400px;
+    font-size: 1.1rem;
+    padding: 14px;
+  }
+}
+/* Responsive styling for large devices */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .home-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .home-hero p {
+    font-size: 1.2rem;
+    padding: 0 3rem;
+  }
+
+  .home-hero .btn {
+    width: 70%;
+    max-width: 500px;
+    font-size: 1.2rem;
+    padding: 14px;
+  }
+}
+/* Responsive styling for extra large devices */
+@media (min-width: 1201px) {
+  .home-hero h1 {
+    font-size: 3rem;
+  }
+
+  .home-hero p {
+    font-size: 1.25rem;
+    padding: 0 4rem;
+  }
+
+  .home-hero .btn {
+    width: 60%;
+    max-width: 600px;
+    font-size: 1.3rem;
+    padding: 14px;
+  }
+}
+/* Footer styling */
+footer {
+  background-color: #4a3e32; /* dark beige */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* Footer links */
+footer a {
+  color: #f8b878; /* muted coral beige */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+/* Footer link hover effect */
+footer a:hover {
+  color: #ff7f50; /* coral */
+  text-decoration: underline;
+}
+/* Footer text */
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+/* Footer social media icons */
+footer .social-icons {
+  margin-top: 10px;
+}
+/* Footer social media icon styling */
+footer .social-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #f8b878; /* muted coral beige */
+  transition: color 0.3s ease;
+}
+/* Footer social media icon hover effect */
+footer .social-icons a:hover {
+  color: #ff7f50; /* coral */
+  text-decoration: none;
+}
+/* Responsive styling for footer */
+@media (max-width: 600px) {
+  footer {
+    padding: 10px 0;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+/* Responsive styling for medium devices */
+@media (min-width: 601px) and (max-width: 900px) {
+  footer {
+    padding: 15px 0;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1.4rem;
+  }
+}
+/* Responsive styling for large devices */
+@media (min-width: 901px) and (max-width: 1200px) {
+  footer {
+    padding: 20px 0;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1.6rem;
+  }
+}
+/* Responsive styling for extra large devices */
+@media (min-width: 1201px) {
+  footer {
+    padding: 25px 0;
+  }
+
+  footer p {
+    font-size: 1.1rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1.8rem;
+  }
+}
+/* Responsive styling for the footer on extra small devices */
+
+
+@media (max-width: 400px) {
+  footer {
+    padding: 5px 0;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1rem;
+  }
+}
+/* Responsive styling for the footer on small devices */
+@media (min-width: 401px) and (max-width: 600px) {
+  footer {
+    padding: 10px 0;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+/* Responsive styling for the footer on medium devices */
+
+@media (min-width: 601px) and (max-width: 900px) {
+  footer {
+    padding: 15px 0;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1.4rem;
+  }
+}

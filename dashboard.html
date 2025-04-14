@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./dashboard.css">
+  <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+
+</head>
+
+<!-- {% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %} -->
+<body>
+  
+
+<h2>Hello {{ user.username }} 👋</h2>
+<p>Your EcoCycle Reward Points: <strong>{{ reward.points }}</strong></p>
+
+<h3>Upcoming Pickup</h3>
+<!-- {% if next_pickup %} -->
+  <p>{{ next_pickup.packaging_type }} x {{ next_pickup.quantity }} – {{ next_pickup.pickup_time }}</p>
+  <p>Status: {{ next_pickup.status }}</p>
+<!-- {% else %} -->
+  <p>No upcoming pickups scheduled.</p>
+<!-- {% endif %} -->
+
+<a class="btn" href="{% url 'schedule_pickup' %}">➕ Schedule New Pickup</a>
+<!-- {% endblock %} -->
+ </body>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xg1z5l5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
+</head>
+<style>
+    /* Existing base styles... */
+  
+    .home-hero {
+      text-align: center;
+      margin-top: 80px;
+      padding: 0 1rem;
+    }
+  
+    .home-hero h1 {
+      font-size: 2.8rem;
+      color: #5a4d41;
+      margin-bottom: 20px;
+    }
+  
+    .home-hero p {
+      font-size: 1.2rem;
+      color: #6b5e52;
+      margin-bottom: 40px;
+    }
+  
+    .home-hero .btn {
+      background-color: #f8b878;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+  
+    .home-hero .btn:hover {
+      background-color: #ff7f50;
+      color: white;
+    }
+  
+    /* ✅ Responsive tweaks */
+    @media (max-width: 600px) {
+      .home-hero h1 {
+        font-size: 2rem;
+      }
+  
+      .home-hero p {
+        font-size: 1rem;
+      }
+  
+      .home-hero .btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+<body>
+    <header>
+        <h2>🌿 EcoCycle</h2>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'register' %}">Register</a>
+        </nav>
+    </header>
+
+    <div class="home-hero">
+        <h1>Welcome to EcoCycle 🌎</h1>
+        <p>Return your packaging. Save the planet. Earn rewards.</p>
+        <a class="btn" href="{% url 'login' %}">Get Started</a>
+    </div>
+</body>
+</html>
+
+<!-- {% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %} -->

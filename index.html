@@ -1,0 +1,81 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}EcoCycle{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5dc; /* beige */
+      color: #333;
+    }
+  
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      border-bottom: 2px solid #e0e0d1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    nav a {
+      margin: 0 10px;
+      padding: 8px 16px;
+      background-color: #f8b878;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+  
+    nav a:hover {
+      background-color: #ff7f50;
+    }
+  
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+  
+    .btn {
+      background-color: #c7b198;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .btn:hover {
+      background-color: #a58d6f;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h2>🌿 EcoCycle</h2>
+    <nav>
+      <a href="./home.html">Home</a>
+      <!-- {% if user.is_authenticated %} -->
+        <a href="./dashboard.html">Dashboard</a>
+        <a href="{% url 'logout' %}">Logout</a>
+      <!-- {% else %} -->
+        <a href="./login.html">Login</a>
+        <a href="{% url 'register' %}">Register</a>
+      <!-- {% endif %} -->
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- {% block content %}
+    {% endblock %} -->
+  </div>
+</body>
+</html>

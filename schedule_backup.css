@@ -1,0 +1,70 @@
+/* Pickup form container */
+.pickup-form {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #fff8e7;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Heading */
+.pickup-form h2 {
+  text-align: center;
+  color: #5a4d41;
+  margin-bottom: 28px;
+}
+
+/* Labels */
+.pickup-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #4a3e32;
+}
+
+/* Inputs, selects, textarea */
+.pickup-form input[type="number"],
+.pickup-form input[type="datetime-local"],
+.pickup-form select,
+.pickup-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fffdf7;
+}
+
+/* Textarea resize */
+.pickup-form textarea {
+  resize: vertical;
+}
+
+/* Button (inherits .btn style) */
+.pickup-form .btn {
+  background-color: #f8b878;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pickup-form .btn:hover {
+  background-color: #ff7f50;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .pickup-form {
+    padding: 24px;
+    margin: 40px 16px;
+  }
+}

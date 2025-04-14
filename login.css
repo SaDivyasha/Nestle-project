@@ -1,0 +1,247 @@
+/* Login form container */
+.login-form {
+    max-width: 400px;
+    margin: 60px auto;
+    background-color: #fff8e7;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .login-form h2 {
+    text-align: center;
+    color: #5a4d41;
+    margin-bottom: 24px;
+  }
+  
+  /* Labels */
+  .login-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #4a3e32;
+  }
+  
+  /* Input fields */
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fffdf7;
+  }
+  
+  /* Submit button (inherits .btn) */
+  .login-form .btn {
+    background-color: #f8b878;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form .btn:hover {
+    background-color: #ff7f50;
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .login-form {
+      margin: 30px 20px;
+      padding: 20px;
+    }
+  }
+  
+    /* Error message */
+    .error-message {
+        color: #ff4d4d; /* red */
+        font-size: 0.9rem;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+
+    /* Success message */
+    .success-message {
+        color: #4CAF50; /* green */
+        font-size: 0.9rem;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+/* Responsive styling for error and success messages */
+@media (max-width: 600px) {
+    .error-message,
+    .success-message {
+        font-size: 0.8rem;
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+}
+/* Responsive styling for the login form */
+@media (max-width: 600px) {
+    .login-form {
+        padding: 20px 15px;
+        margin: 40px auto;
+    }
+    .login-form h2 {
+        font-size: 1.5rem;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        font-size: 0.9rem;
+    }
+    .login-form .btn {
+        font-size: 0.9rem;
+    }
+}
+/* Responsive styling for the footer */
+
+@media (max-width: 600px) {
+    footer {
+        padding: 10px 0;
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
+    footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+/* Responsive styling for medium devices */
+
+@media (min-width: 601px) and (max-width: 900px) {
+    footer {
+        padding: 15px 0;
+    }
+    footer p {
+        font-size: 0.9rem;
+    }
+    footer .social-icons a {
+        font-size: 1.4rem;
+    }
+}
+/* Responsive styling for large devices */
+@media (min-width: 901px) and (max-width: 1200px) {
+    footer {
+        padding: 20px 0;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+    footer .social-icons a {
+        font-size: 1.6rem;
+    }
+}
+/* Responsive styling for extra large devices */
+
+@media (min-width: 1201px) {
+    footer {
+        padding: 25px 0;
+    }
+    footer p {
+        font-size: 1.1rem;
+    }
+    footer .social-icons a {
+        font-size: 1.8rem;
+    }
+}
+/* Responsive styling for the footer on extra small devices */
+@media (max-width: 400px) {
+    footer {
+        padding: 5px 0;
+    }
+    footer p {
+        font-size: 0.7rem;
+    }
+    footer .social-icons a {
+        font-size: 1rem;
+    }
+}
+/* Responsive styling for the footer on small devices */
+@media (max-width: 600px) {
+    footer {
+        padding: 10px 0;
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
+    footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+/* Responsive styling for the footer on medium devices */
+@media (min-width: 601px) and (max-width: 900px) {
+    footer {
+        padding: 15px 0;
+    }
+    footer p {
+        font-size: 0.9rem;
+    }
+    footer .social-icons a {
+        font-size: 1.4rem;
+    }
+}
+/* Responsive styling for the footer on large devices */
+@media (min-width: 901px) and (max-width: 1200px) {
+    footer {
+        padding: 20px 0;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+    footer .social-icons a {
+        font-size: 1.6rem;
+    }
+}
+/* Responsive styling for the footer on extra large devices */
+@media (min-width: 1201px) {
+    footer {
+        padding: 25px 0;
+    }
+    footer p {
+        font-size: 1.1rem;
+    }
+    footer .social-icons a {
+        font-size: 1.8rem;
+    }
+}
+/* Responsive styling for the footer on extra small devices */
+
+
+@media (max-width: 400px) {
+    footer {
+        padding: 5px 0;
+    }
+    footer p {
+        font-size: 0.7rem;
+    }
+    footer .social-icons a {
+        font-size: 1rem;
+    }
+}
+
+
+/* Responsive styling for the footer on small devices */
+@media (max-width: 600px) {
+    footer {
+        padding: 10px 0;
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
+    footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}

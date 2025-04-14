@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./login.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xg1z5l5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
+  
+</head>
+<body>
+<!-- {% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %} -->
+<h2>Login to EcoCycle</h2>
+<form class="login-form" method="post" action="{% url 'login' %}">
+  <div class="login-icon">
+    <i class="fas fa-user-circle"></i>
+  <!-- {% csrf_token %} -->
+  <label class="label">Username:</label><br>
+  <input type="text" name="username"><br><br>
+    Email:</label><br>
+  <input type="text" name="username"><br><br>
+  <label="label">Password:</label><br>
+   
+  <input type="password" name="password"><br><br>
+  <button class="btn" type="submit">Login</button>
+</form>
+</body>
+</html>
+<!-- {% endblock %} -->
